@@ -1,13 +1,13 @@
-# Remote PowerShell Execution
+# Remote Execution of PowerShell Scripts
 
-Execute a PowerShell script being hosted on your http(s) server.
-Ensure you have proper authorization to use this payload and adhere to laws and ethical guidelines.
+Execute a PowerShell script from your HTTP(S) server.
+Ensure proper authorization and adherence to legal and ethical guidelines.
 
 ## Disclaimer
 
-**This payload is for educational and informational purposes only. Unauthorized and malicious use is strictly prohibited.**
+**This payload is for educational purposes only. Unauthorized and malicious use is prohibited.**
 
 ## Usage
-This payload is created for educational purposes.
 
-•	Modify the `<ip>` and `<port>` placeholders in the script with your listening server.
+Run "python3 server.py" on your server to listen on port 9001 (port as needed).
+This will serve up PowerShell scripts from the same folder as server.py.
