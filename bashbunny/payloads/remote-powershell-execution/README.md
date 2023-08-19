@@ -1,4 +1,4 @@
-# Remote PowerShell Execution
+# Remote PowerShell Execution for BashBunny
 
 Execute a PowerShell script from your HTTP(S) server.
 Ensure proper authorization and adherence to legal and ethical guidelines.
