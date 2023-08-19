@@ -1,4 +1,4 @@
-# Payloads For Various Hacking Gadgets
+# Payloads For Hak5 Gadgets
 
 This repository contains payloads for various hacking gadgets, intended for educational and ethical purposes like learning about security vulnerabilities and penetration testing.
 
