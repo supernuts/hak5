@@ -34,7 +34,6 @@ class MyRequestHandler(http.server.SimpleHTTPRequestHandler):
             super().do_GET()
 
     def address_string(self):
-        # Override the default address_string method to display the client's IP address
         host, port = self.client_address
         return f"{host}"
 
