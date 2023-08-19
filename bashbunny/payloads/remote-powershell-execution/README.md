@@ -1,4 +1,4 @@
-# Remote Execution of PowerShell Scripts
+# Remote PowerShell Execution
 
 Execute a PowerShell script from your HTTP(S) server.
 Ensure proper authorization and adherence to legal and ethical guidelines.
