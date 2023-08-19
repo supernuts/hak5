@@ -11,3 +11,5 @@ Ensure proper authorization and adherence to legal and ethical guidelines.
 Copy the PowerShell scripts to the same folder as server.py.
 Run "python3 server.py" on your server to listen on port 9001 (change port as needed).
 Execute the payload to run the remote PowerShell script.
+
+Tested on x64 Win 11 Pro.
