@@ -1,6 +1,6 @@
 # Mimikatz remote upload
 
-Disables AMSI to run mimikatz, uploads results to your remote server, and clears history.
+Bypasses AMSI to run mimikatz, uploads results to your remote server, and clears history.
 
 Ensure proper authorization and adherence to legal and ethical guidelines.
 
